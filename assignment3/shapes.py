@@ -1,4 +1,11 @@
 class shapes:
+    def __init__(self):
+        self.__has_area = True #private variable
+        self._solid = True #protected variable 
+        self.sides = 4#Public variable
+    
+    def set_sides(self, side):
+        self.sides=side
     def perimeter(self):
         pass
     

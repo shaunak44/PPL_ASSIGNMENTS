@@ -1,4 +1,13 @@
-class animals():#animals is base class
+from abc import ABC, abstractmethod
+class living_things(ABC):
+    @abstractmethod
+    def set_voice(self, voice):
+        pass
+    @abstractmethod
+    def get_voice(self):
+        return None
+
+class animals(ABC):#animals is base class
     def __init__(self, num=50):
         self.num = num
     def eats(self): #method overriding is implemented ('eats' method is there in derived class of animals) 

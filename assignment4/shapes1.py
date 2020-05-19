@@ -33,7 +33,7 @@ class _3d_shapes(shapes):#sub-class of shapes
         else:
             return False
     def __lt__(self, p): #operator overloading
-        if(self.area() >= p.area()):
+        if(self.surface_area() >= p.area()):
             return False
         else:
             return True  

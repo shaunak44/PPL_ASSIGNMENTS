@@ -1,4 +1,13 @@
 class animals:
+    def __init__(self):
+        self.__eyes = 2 #private variable
+        self._living = True #protected variable 
+        self.legs = 4#Public variable
+
+    def set_legs(self, legs):
+        self.legs=legs
+    def get_legs(self):
+        return self.legs
     def eats(self):
         pass
 
