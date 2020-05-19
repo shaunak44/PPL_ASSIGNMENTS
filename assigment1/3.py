@@ -1,4 +1,4 @@
-host_file = "/etc/hosts"
+host_file = "C:/Windows/System32/drivers/etc"
 redirect = "127.0.0.1"
 
 blocked = ["www.facebook.com", "www.makemytrip.com", "www.reddit.com"]

@@ -41,10 +41,10 @@ while 1:
     val = input()
     if val != "4":
         if direction:
-            shore2.pop(val)
             shore1.update(dict({str(val) : shore2[val]}))
+            shore2.pop(str(val))
         else: 
-            shore1.pop(val)
             shore2.update(dict({str(val) : shore1[val]}))
+            shore1.pop(str(val))
     direction ^= 1
     print()
